@@ -1,6 +1,21 @@
 ﻿Console.Clear();
 
-Multiplicacao();
+Menu();
+
+static void Menu()
+{
+    Console.Clear();
+
+    Console.WriteLine("O que deseja fazer?");
+    Console.WriteLine("1 - Soma");
+    Console.WriteLine("2 - Subtração");
+    Console.WriteLine("3 - Divisão");
+    Console.WriteLine("4 - Multiplicação");
+
+    Console.WriteLine("----------");
+    Console.WriteLine("Selecione uma opção: ");
+    short res = short.Parse(Console.ReadLine());
+}
 
 static void Soma()
 {
@@ -55,7 +70,7 @@ static void Divisao()
 
 static void Multiplicacao()
 {
-   Console.Clear();
+    Console.Clear();
 
     Console.WriteLine("Primeiro valor: ");
     float v1 = float.Parse(Console.ReadLine());
